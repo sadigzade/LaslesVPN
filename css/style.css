@@ -32,6 +32,10 @@
   line-height: 19px;
 }
 
+a {
+  text-decoration: none;
+}
+
 .header {
   margin-top: 50px;
 }
@@ -140,8 +144,9 @@ u {
   margin-top: 102px;
   padding: 67.5px 91px;
   border-radius: 10px;
-  -webkit-box-shadow: 5px 10px 20px rgba(13, 16, 37, 0.06);
-          box-shadow: 5px 10px 20px rgba(13, 16, 37, 0.06);
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
+          box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
 }
 
 .about-statistics__block {
@@ -355,6 +360,207 @@ u {
   color: #F53838;
   font-weight: 700;
   padding: 13px 63px;
+}
+
+.testimonials {
+  margin-top: 150px;
+  text-align: center;
+}
+
+.testimonials-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+  max-width: 383px;
+  margin: 0 auto;
+}
+
+.testimonials-subtitle {
+  line-height: 30px;
+  color: #4F5665;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.testimonials-map {
+  margin-top: 156px;
+}
+
+.testimonials-company {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 7px;
+}
+
+.help {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.help-title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 50px;
+  color: #0B132A;
+  max-width: 448px;
+  margin: 0 auto;
+}
+
+.help-subtitle {
+  line-height: 30px;
+  color: #4F5665;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.help-subscribe {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 1140px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 58.5px 70px;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-top: 65px;
+  -webkit-box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
+          box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
+}
+
+.help-subscribe--text---title {
+  font-weight: 500;
+  font-size: 35px;
+  line-height: 45px;
+  max-width: 372px;
+  color: #0B132A;
+  text-align: left;
+}
+
+.help-subscribe--text---subtitle {
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.help-subscribe--btn {
+  line-height: 25px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  background-color: #F53838;
+  padding: 17.5px 65px;
+  -webkit-box-shadow: 5px 10px 20px rgba(245, 56, 56, 0.35);
+          box-shadow: 5px 10px 20px rgba(245, 56, 56, 0.35);
+}
+
+.footer {
+  margin-top: 63.5px;
+  margin-bottom: 100px;
+}
+
+.footer-info {
+  display: inline-block;
+}
+
+.footer-info--descr {
+  max-width: 340px;
+  font-size: 16px;
+  line-height: 30px;
+  color: #4F5665;
+  margin-top: 20px;
+}
+
+.footer-info--descr strong {
+  font-weight: 500;
+}
+
+.footer-info--social {
+  max-width: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 30px;
+}
+
+.footer-info--social a {
+  width: 38px;
+  height: 38px;
+  background-color: #fff;
+  -webkit-box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
+          box-shadow: 0 5px 20px rgba(13, 16, 37, 0.11);
+  border-radius: 50%;
+}
+
+.footer-info--social a svg {
+  margin-left: 50%;
+  margin-top: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+      -ms-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+}
+
+.footer-info--author {
+  line-height: 30px;
+  color: #AFB5C0;
+  margin-top: 30px;
+}
+
+.footer-product,
+.footer-engage,
+.footer-money {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.footer-product--title,
+.footer-engage--title,
+.footer-money--title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 30px;
+  color: #0B132A;
+}
+
+.footer-product li,
+.footer-engage li,
+.footer-money li {
+  margin-top: 10px;
+}
+
+.footer-product a,
+.footer-engage a,
+.footer-money a {
+  color: #4F5665;
+  line-height: 30px;
+}
+
+.footer-product {
+  margin-left: 230px;
+}
+
+.footer-engage,
+.footer-money {
+  margin-left: 126px;
 }
 
 @supports (-webkit-appearance:none){
