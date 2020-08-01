@@ -12,3 +12,10 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
   }
 });
+
+$(document).ready(function () {
+  $('.help-slider').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1
+  });
+});
