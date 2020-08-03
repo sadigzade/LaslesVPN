@@ -11,7 +11,29 @@ testWebP(function (support) {
   } else {
     document.querySelector('body').classList.add('no-webp');
   }
+});;
+let x = document.querySelector(".contain");
+let nav = document.querySelector(".header-btn__users");
+
+x.addEventListener("click", function() {
+  let element = document.querySelector(".header-nav");
+
+  x.classList.toggle("change");
 });
+
+nav.addEventListener("click", function() {
+  let menu = document.querySelector(".header-menu");
+  let headerBtns = document.querySelector(".header-btn");
+
+  menu.classList.toggle("close-nav");
+  if (menu.classList.contains("close-nav")) {
+    headerBtns.style.visibility = "visible";
+    headerBtns.style.opacity = 1;
+
+  } else {
+    headerBtns.style.visibility = "hidden";
+  }
+});;
 
 $(document).ready(function () {
   $('.help-slider').slick({
