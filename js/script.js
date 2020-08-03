@@ -12,26 +12,48 @@ testWebP(function (support) {
     document.querySelector('body').classList.add('no-webp');
   }
 });;
-let x = document.querySelector(".contain");
-let nav = document.querySelector(".header-btn__users");
+// Переменные - элементы
+let burger = document.querySelector(".contain");
+let iconUser = document.querySelector(".header-btn__users");
+let navMenu = document.querySelector(".header-menu");
+let headerBtns = document.querySelector(".header-btn");
+let headerLogo = document.querySelector(".header-logo");
+let contain = document.querySelector(".contain");
 
-x.addEventListener("click", function() {
-  let element = document.querySelector(".header-nav");
+// Меню - бургер
+burger.addEventListener("click", function() {
+  burger.classList.toggle("change");
 
-  x.classList.toggle("change");
+  if (contain.classList.contains("change")) {
+    navMenu.style.top = "60px";
+    navMenu.style.opacity = "1";
+    navMenu.style.visibility = "visible";
+  } else {
+    navMenu.style.top = "10px";
+    navMenu.style.opacity = "0";
+    navMenu.style.visibility = "hidden";
+  }
 });
 
-nav.addEventListener("click", function() {
-  let menu = document.querySelector(".header-menu");
-  let headerBtns = document.querySelector(".header-btn");
+// Выподающее окно для входа или регистрации
+iconUser.addEventListener("click", function() {
+  navMenu.classList.toggle("close");
 
-  menu.classList.toggle("close-nav");
-  if (menu.classList.contains("close-nav")) {
+  if (navMenu.classList.contains("close")) {
+    headerBtns.style.right = "27%";
+    headerBtns.style.transform = "translateX(50%)";
+    headerBtns.style.opacity = "1";
     headerBtns.style.visibility = "visible";
-    headerBtns.style.opacity = 1;
 
   } else {
+    headerBtns.style.right = "0px";
+    headerBtns.style.opacity = "0";
+    headerBtns.style.transform = "translateX(0)";
     headerBtns.style.visibility = "hidden";
+  }
+
+  if (document.documentElement.clientWidth < 767) {
+    headerLogo.classList.toggle("close");
   }
 });;
 
