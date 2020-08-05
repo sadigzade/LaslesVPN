@@ -25,7 +25,7 @@ burger.addEventListener("click", function() {
   burger.classList.toggle("change");
 
   if (contain.classList.contains("change")) {
-    navMenu.style.top = "60px";
+    navMenu.style.top = "70px";
     navMenu.style.opacity = "1";
     navMenu.style.visibility = "visible";
   } else {
@@ -40,22 +40,46 @@ iconUser.addEventListener("click", function() {
   navMenu.classList.toggle("close");
 
   if (navMenu.classList.contains("close")) {
-    headerBtns.style.right = "27%";
+    headerBtns.style.right = "50%";
     headerBtns.style.transform = "translateX(50%)";
     headerBtns.style.opacity = "1";
     headerBtns.style.visibility = "visible";
-
   } else {
     headerBtns.style.right = "0px";
-    headerBtns.style.opacity = "0";
     headerBtns.style.transform = "translateX(0)";
+    headerBtns.style.opacity = "0";
     headerBtns.style.visibility = "hidden";
   }
 
   if (document.documentElement.clientWidth < 767) {
     headerLogo.classList.toggle("close");
   }
-});;
+});
+
+// Зависимость от ширины экрана
+document.addEventListener("DOMContentLoaded", function (event) {
+  window.onresize = function () {
+    resize_info();
+  };
+});
+
+function resize_info() {
+  if (document.documentElement.clientWidth > 930) {
+    headerBtns.style.opacity = "1";
+    headerBtns.style.visibility = "visible";
+  } else {
+    headerBtns.style.opacity = "0";
+    headerBtns.style.visibility = "hidden";
+  }
+
+  if (document.documentElement.clientWidth > 767) {
+    navMenu.style.opacity = "1";
+    navMenu.style.visibility = "visible";
+  } else {
+    navMenu.style.opacity = "0";
+    navMenu.style.visibility = "hidden";  
+  }
+};
 
 $(document).ready(function () {
   $('.help-slider').slick({
