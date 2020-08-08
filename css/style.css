@@ -357,6 +357,7 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 60px;
 }
 
 .pricing-plans--block {
@@ -457,22 +458,31 @@ a {
   margin-top: 156px;
 }
 
+.testimonials-map img {
+  width: 100%;
+}
+
 .testimonials-company {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 7px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 60px;
+}
+
+.testimonials-company__block img {
+  width: 100%;
 }
 
 .help {
   text-align: center;
-  margin-top: 50px;
+  margin-top: 90px;
   font-family: "Rubik";
   font-weight: 400;
   font-size: 16px;
@@ -486,6 +496,14 @@ a {
   color: #0B132A;
   max-width: 448px;
   margin: 0 auto;
+}
+
+.help-subtitle {
+  line-height: 30px;
+  color: #4F5665;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 20px;
 }
 
 .help-slider {
@@ -505,6 +523,9 @@ a {
   border: 2px solid #DDDDDD;
   border-radius: 10px;
   margin-right: 50px;
+  -webkit-transform: translateX(30px);
+      -ms-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .help-slider__item--header {
@@ -588,14 +609,6 @@ a {
   right: 50px;
   background: url("../img/help/arrow-right.svg") center/50% no-repeat;
   background-color: #F53838;
-}
-
-.help-subtitle {
-  line-height: 30px;
-  color: #4F5665;
-  max-width: 555px;
-  margin: 0 auto;
-  margin-top: 20px;
 }
 
 .help-subscribe {
@@ -794,8 +807,14 @@ a {
   }
 
   .about-text__title {
-    font-size: 40px;
-    line-height: 55px;
+    text-align: center;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .about-text__subtitle {
+    margin: 20px auto 0;
+    text-align: center;
   }
 
   .about-text__btn {
@@ -836,6 +855,7 @@ a {
 
   .features-text {
     width: 100%;
+    text-align: center;
   }
 
   .features-text--title {
@@ -856,6 +876,15 @@ a {
 
   .pricing-plans--block {
     padding: 80px 25px 50px 25px;
+  }
+
+  .testimonials-map {
+    margin-top: 70px;
+  }
+
+  .testimonials-company__block {
+    width: 180px;
+    margin-top: 30px;
   }
 }
 
@@ -958,6 +987,14 @@ a {
     padding: 80px 70px 50px 70px;
     margin-top: 60px;
   }
+
+  .testimonials-company {
+    margin-top: 30px;
+  }
+
+  .testimonials-company__block {
+    width: 160px;
+  }
 }
 
 @media (max-width: 522px) {
@@ -985,7 +1022,6 @@ a {
   }
 
   .about-text__title {
-    text-align: center;
     font-size: 20px;
     line-height: 30px;
   }
@@ -1005,7 +1041,7 @@ a {
 
   .about-statistics {
     padding: 30px 20px;
-    height: 450px;
+    height: 400px;
   }
 
   .about-statistics__block .statistics-block__text {
@@ -1022,6 +1058,10 @@ a {
     line-height: 20px;
   }
 
+  .features {
+    margin-bottom: 60px;
+  }
+
   .features-text--title {
     font-size: 20px;
     line-height: 30px;
@@ -1036,6 +1076,10 @@ a {
     font-size: 11px;
   }
 
+  .pricing {
+    margin-top: 10px;
+  }
+
   .pricing-title {
     font-size: 20px;
     line-height: 30px;
@@ -1046,8 +1090,75 @@ a {
     line-height: 15px;
   }
 
+  .pricing-plans {
+    margin: 0;
+  }
+
   .pricing-plans--block {
-    padding: 40px 40px 30px 40px;
+    padding: 20px 40px 20px 40px;
+    min-height: auto;
+  }
+
+  .pricing-plans--block .plans-block--img {
+    width: 60%;
+    margin: 0 auto;
+  }
+
+  .pricing-plans--block .plans-block--img img {
+    width: 100%;
+  }
+
+  .pricing-plans--block .plans-block--title {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .pricing-plans--block .plans-block--worth---descr {
+    font-size: 10px;
+    line-height: 20px;
+  }
+
+  .pricing-plans--block .plans-block--price {
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    margin-top: 30px;
+  }
+
+  .pricing-plans--block .plans-block--btn {
+    position: static;
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+    margin-top: 20px;
+  }
+
+  .testimonials {
+    margin-top: 70px;
+  }
+
+  .testimonials-title {
+    font-size: 20px;
+    line-height: 30px;
+  }
+
+  .testimonials-subtitle {
+    font-size: 10px;
+    line-height: 15px;
+  }
+
+  .testimonials-map {
+    margin-top: 50px;
+  }
+
+  .testimonials-map img {
+    width: 100%;
+  }
+
+  .testimonials-company__block {
+    width: 120px;
+    margin-top: 20px;
   }
 }
 
