@@ -478,8 +478,39 @@ a {
   margin-top: 60px;
 }
 
-.testimonials-company__block img {
-  width: 100%;
+.testimonials-company a #netflix:hover path {
+  fill: #d81f26;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.testimonials-company a #reddit:hover .a {
+  fill: #ff4500;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.testimonials-company a #reddit:hover .b {
+  fill: #222;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.testimonials-company a #discord:hover .st0 {
+  fill: #7289DA;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.testimonials-company a #spotify:hover path {
+  fill: #1ED760;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
 
 .help {
@@ -579,8 +610,7 @@ a {
 
 .help-slider .slick-arrow {
   position: absolute;
-  right: 0;
-  bottom: -81px;
+  bottom: -80px;
   font-size: 0;
   width: 20px;
   height: 17.5px;
@@ -598,6 +628,33 @@ a {
   right: 50px;
   background: url("../img/help/arrow-right.svg") center/50% no-repeat;
   background-color: #F53838;
+}
+
+.help-slider .slick-dots {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 150px;
+  position: absolute;
+  bottom: -65px;
+  left: 25px;
+}
+
+.help-slider .slick-dots button {
+  border: none;
+  background: #dde0e4;
+  font-size: 0;
+  width: 15px;
+  height: 15px;
+  border-radius: 50px;
+}
+
+.help-slider .slick-dots .slick-active button {
+  width: 45px;
+  background: #F53838;
 }
 
 .help-subscribe {
@@ -681,7 +738,6 @@ a {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin: 0 auto;
   margin-top: 30px;
 }
 
@@ -878,9 +934,9 @@ a {
     margin-top: 70px;
   }
 
-  .testimonials-company__block {
-    width: 180px;
-    margin-top: 30px;
+  .testimonials-company a svg {
+    width: 160px;
+    margin: 30px 30px 0;
   }
 
   .help-subscribe {
@@ -912,6 +968,10 @@ a {
         -ms-flex-align: center;
             align-items: center;
     text-align: center;
+  }
+
+  .footer-info__social {
+    margin: 30px auto 0;
   }
 
   .footer-product,
@@ -1026,8 +1086,8 @@ a {
     margin-top: 30px;
   }
 
-  .testimonials-company__block {
-    width: 160px;
+  .testimonials-company a svg {
+    width: 140px;
   }
 
   .help-slider {
@@ -1157,9 +1217,12 @@ a {
     width: 100%;
   }
 
-  .testimonials-company__block {
-    width: 120px;
-    margin-top: 20px;
+  .testimonials-company a svg {
+    width: 110px;
+  }
+
+  .help-slider {
+    margin-top: 80px;
   }
 
   .help-slider__item--header .item-header__user {
@@ -1182,6 +1245,28 @@ a {
     font-size: 12px;
     line-height: 20px;
     min-height: 50px;
+  }
+
+  .help-slider .slick-prev {
+    right: 60%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+
+  .help-slider .slick-next {
+    right: 40%;
+    -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+            transform: translateX(50%);
+  }
+
+  .help-slider .slick-dots {
+    top: -35px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
   }
 
   .help-subscribe--text---title {
@@ -1220,6 +1305,10 @@ a {
 
   .header-btn {
     top: -5px;
+  }
+
+  .testimonials-company a svg {
+    margin-top: 0px;
   }
 }
 @supports (-webkit-appearance:none){
